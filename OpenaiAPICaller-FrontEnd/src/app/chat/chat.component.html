@@ -1,0 +1,12 @@
+<div class="chat-container">
+  <div class="prompt-container">
+    <label for="prompt">Enter your prompt:</label>
+    <input type="text" id="prompt" [(ngModel)]="prompt" />
+    <button (click)="sendPrompt()">Send</button>
+  </div>
+
+  <div class="response-container" *ngIf="response">
+    <strong>Response:</strong>
+    <p>{{ response }}</p>
+  </div>
+</div>
